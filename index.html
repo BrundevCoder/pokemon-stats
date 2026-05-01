@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="barsContainer" class="background">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="container">
+    <h1>Pokemon Stats</h1>
+
+    <div class="input-container">
+      <label for="pokemonName">Pokemon Name:</label>
+      <input value="pikachu" list="pokemonsList" placeholder="e.x pikachu" id="pokemonName" name="pokemonName" type="text">
+      
+      <datalist id="pokemonsList">
+        <option value="arceus">
+        <option value="mewtwo">
+        <option value="mew">
+        <option value="rayquaza">
+        <option value="lugia">
+        <option value="pikachu">
+        <option value="giratina">
+        <option value="kyurem">
+        <option value="eternatus">
+        <option value="ho-oh">
+        <option value="groudon">
+      </datalist>
+
+      <button id="btn">Search</button>
+    </div>
+
+    <div class="image-container">
+      <img id="pokemonImageDisplay" src="" alt="">
+    </div>
+
+    <div class="stats-container">
+      <p id="pokemonHeight">Height: 0</p>
+      <p id="weightHeight">Weight: 0</p>
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
