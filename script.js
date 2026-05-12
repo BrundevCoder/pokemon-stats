@@ -12,7 +12,7 @@ let img = "";
 let height = 0;
 let weight = 0;
 
-// functions
+
 async function getApi(pokemonName) {
   try {
     let response = await fetch(`${baseUrl}${pokemonName.toLowerCase()}`);
@@ -45,10 +45,9 @@ button.addEventListener("click", () => {
   getApi(pokemonNameInput.value);
 })
 
-// start with a pokemon already
+
 getApi("pikachu");
 
-// bars
 
 let barsQuantity = Math.floor(document.documentElement.clientWidth / 200) * 2;
 
